@@ -22,6 +22,7 @@
             --text-main: #FFFFFF;
             --text-secondary: #A0A0A0;
             --text-muted: #666666;
+            --accent-warning: #FF5500;
             --shadow-glow: 0 0 20px rgba(212, 255, 0, 0.15);
         }
 
@@ -99,7 +100,7 @@
         h2 {
             font-size: 32px;
             font-weight: 700;
-            color: var(--text-main);
+            color: var(--text-secondary);
             margin-bottom: 8px;
             line-height: 1.2;
             letter-spacing: -0.02em;
@@ -140,6 +141,15 @@
 
         .feature:last-child {
             margin-bottom: 0;
+        }
+
+        .feature-warning {
+            /* Text color remains standard */
+        }
+
+        .feature-warning .feature-icon {
+            color: var(--accent-warning);
+            text-shadow: 0 0 12px rgba(255, 85, 0, 0.5);
         }
 
         .feature-icon {
@@ -214,9 +224,10 @@
             }
 
             .cta-button {
-                padding: 18px 30px;
+                padding: 16px 15px;
                 font-size: 16px;
                 width: 100%;
+                white-space: nowrap;
             }
 
             .feature {
@@ -253,13 +264,13 @@
                 <span class="feature-icon">✓</span>
                 <span>Получите план: что сказать, как действовать, чего избегать</span>
             </div>
-            <div class="feature">
+            <div class="feature feature-warning">
                 <span class="feature-icon">X</span>
                 <span>Не передавайте AI-консультанту персональные данные</span>
             </div>
-            <div class="feature">
+            <div class="feature feature-warning">
                 <span class="feature-icon">X</span>
-                <span>Перед кадровыми решениями посоветуйтесь с HR и юристами</span>
+                <span>Перед кадровыми решениями посоветуйтесь с HR</span>
             </div>
         </div>
 
@@ -273,7 +284,7 @@
 
         <div class="credentials">
             Основано на 20-летнем опыте работы с крупными компаниями РФ и СНГ<br>
-            (C) 2025, Mindfulness DOO
+            (C) 2025, AI Coach Lab
         </div>
     </div>
 </body>
