@@ -75,12 +75,21 @@
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
         }
 
-        .emoji {
-            font-size: 64px;
-            margin-bottom: 25px;
-            display: block;
-            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+        .main-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: drop-shadow(0 0 15px rgba(212, 255, 0, 0.3));
             animation: float 6s ease-in-out infinite;
+        }
+
+        .main-icon svg {
+            width: 100%;
+            height: 100%;
+            stroke: var(--accent-color);
         }
 
         @keyframes float {
@@ -243,13 +252,24 @@
 
 <body>
     <div class="container">
-        <span class="emoji">💼</span>
+        <div class="main-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M14 9C14 7.89543 13.1046 7 12 7H4C2.89543 7 2 7.89543 2 9V15C2 16.1046 2.89543 17 4 17H5.5V20L8.5 17H12C13.1046 17 14 16.1046 14 15V9Z"
+                    stroke="var(--accent-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M22 6V12C22 13.1046 21.1046 14 20 14H18.5V17L15.5 14H14.071" stroke="var(--accent-color)"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M10 4.00005C10.6388 3.39207 11.4796 3.03159 12.3857 3.00391H20C21.1046 3.00391 22 3.89934 22 5.00391V6.00005"
+                    stroke="var(--accent-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
 
         <h2>Упала мотивация?</h2>
         <h2>Конфликты в команде?</h2>
         <h2>Бесит руководитель?</h2>
 
-        <p class="subtitle"><br>Поговорите с AI-консультантом прямо сейчас</p>
+        <p class="subtitle"><br>Поговорите с AI-коучем прямо сейчас</p>
 
         <div class="features">
             <div class="feature">
@@ -266,7 +286,7 @@
             </div>
             <div class="feature feature-warning">
                 <span class="feature-icon">X</span>
-                <span>Не передавайте AI-консультанту персональные данные</span>
+                <span>Не передавайте AI-коучу персональные данные</span>
             </div>
             <div class="feature feature-warning">
                 <span class="feature-icon">X</span>
@@ -283,7 +303,7 @@
         </p>
 
         <div class="credentials">
-            Основано на 20-летнем опыте работы с крупными компаниями РФ и СНГ<br>
+            Основано на 20-летнем опыте работы с крупными компаниями РФ и СНГ<br><br>
             (C) 2025, AI Coach Lab
         </div>
     </div>
