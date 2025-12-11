@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-консультант для руководителей и HR">
+    <title>AI-консультант для руководителей и HR</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        
+        .emoji {
+            font-size: 64px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #4a5568;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        
+        .description {
+            font-size: 16px;
+            color: #718096;
+            margin-bottom: 25px;
+            padding: 0 10px;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 30px 0;
+            padding: 0 10px;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            font-size: 15px;
+            color: #4a5568;
+        }
+        
+        .feature-icon {
+            color: #667eea;
+            margin-right: 12px;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            padding: 18px 45px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 25px 0 20px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.5);
+        }
+        
+        .cta-button:active {
+            transform: translateY(0);
+        }
+        
+        .note {
+            font-size: 14px;
+            color: #a0aec0;
+            margin-top: 15px;
+        }
+        
+        .credentials {
+            margin-top: 35px;
+            padding-top: 25px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 13px;
+            color: #718096;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .subtitle {
+                font-size: 16px;
+            }
+            
+            .emoji {
+                font-size: 52px;
+            }
+            
+            .cta-button {
+                padding: 16px 35px;
+                font-size: 17px;
+                width: 100%;
+            }
+            
+            .feature {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="emoji">💼</span>
+        
+        <h1>Сложный разговор с сотрудником?</h1>
+        <h1>Подготовиться к совещанию?</h1>
+        <h1>Конфликты в команде?</h1>
+        
+        <p class="subtitle">Получите рекомендации и готовый план действий за 5 минут</p>
+        
+        <p class="description">
+            AI-консультант помогает руководителям решать прямо сейчас.
+        </p>
+        
+        <div class="features">
+            <div class="feature">
+                <span class="feature-icon">✓</span>
+                <span>Опишите ситуацию с сотрудником</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">✓</span>
+                <span>Ответьте на 2-3 уточняющих вопроса</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">✓</span>
+                <span>Получите план: что сказать, как действовать, чего избегать</span>
+            </div>
+        </div>
+        
+        <a href="https://t.me/as_hr_mentor_bot" class="cta-button" target="_blank">
+            Попробовать бесплатно →
+        </a>
+        
+        <p class="note">
+            Демо-режим в Telegram. Без регистрации.
+        </p>
+        
+        <div class="credentials">
+            Основано на 20-летнем опыте работы с крупными компаниями.
+        </div>
+    </div>
+</body>
+</html>
