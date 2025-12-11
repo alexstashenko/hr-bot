@@ -15,7 +15,7 @@
         :root {
             --bg-dark: #121212;
             --bg-graphite: #1E1E1E;
-            --accent-color: #00FF66;
+            --accent-color: #00F2FF;
             /* Neon Green */
             --glass-bg: rgba(30, 30, 30, 0.6);
             --glass-border: rgba(255, 255, 255, 0.1);
@@ -23,7 +23,7 @@
             --text-secondary: #A0A0A0;
             --text-muted: #666666;
             --accent-warning: #FF5500;
-            --shadow-glow: 0 0 20px rgba(0, 255, 102, 0.15);
+            --shadow-glow: 0 0 20px rgba(0, 242, 255, 0.15);
         }
 
         * {
@@ -38,8 +38,8 @@
             color: var(--text-main);
             background-color: var(--bg-dark);
             background-image:
-                radial-gradient(circle at 10% 20%, rgba(0, 255, 102, 0.03) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(0, 255, 102, 0.03) 0%, transparent 40%),
+                radial-gradient(circle at 10% 20%, rgba(0, 242, 255, 0.03) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(0, 242, 255, 0.03) 0%, transparent 40%),
                 linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
             min-height: 100vh;
             display: flex;
@@ -82,7 +82,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            filter: drop-shadow(0 0 15px rgba(0, 255, 102, 0.3));
+            filter: drop-shadow(0 0 15px rgba(0, 242, 255, 0.3));
             animation: float 6s ease-in-out infinite;
         }
 
@@ -171,7 +171,7 @@
             flex-shrink: 0;
             line-height: 1.6;
             /* Match text line-height */
-            text-shadow: 0 0 10px rgba(0, 255, 102, 0.4);
+            text-shadow: 0 0 10px rgba(0, 242, 255, 0.4);
         }
 
         .cta-button {
@@ -185,7 +185,7 @@
             font-weight: 700;
             margin: 10px 0 20px 0;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 0 20px rgba(0, 255, 102, 0.2);
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
             text-transform: uppercase;
             letter-spacing: 0.05em;
             position: relative;
@@ -194,8 +194,8 @@
 
         .cta-button:hover {
             transform: translateY(-2px) scale(1.02);
-            box-shadow: 0 0 30px rgba(0, 255, 102, 0.4);
-            background: #80FFB3;
+            box-shadow: 0 0 30px rgba(0, 242, 255, 0.4);
+            background: #80F9FF;
         }
 
         .cta-button:active {
@@ -273,7 +273,8 @@
         <h2>Конфликты в команде?</h2>
         <h2>Бесят сотрудники?</h2>
 
-        <p class="subtitle"><br>Поговорите с AI-консультантом прямо сейчас. Без ожидания коуча, без книг, без догадок
+        <p class="subtitle"><br>Поговорите с AI-консультантом прямо сейчас в Телеграм. Без ожидания коуча, без книг, без
+            догадок
         </p>
 
         <div class="features">
