@@ -15,15 +15,15 @@
         :root {
             --bg-dark: #121212;
             --bg-graphite: #1E1E1E;
-            --accent-color: #D4FF00;
-            /* Acid Yellow/Green */
+            --accent-color: #39FF14;
+            /* Neon Green */
             --glass-bg: rgba(30, 30, 30, 0.6);
             --glass-border: rgba(255, 255, 255, 0.1);
             --text-main: #FFFFFF;
             --text-secondary: #A0A0A0;
             --text-muted: #666666;
             --accent-warning: #FF5500;
-            --shadow-glow: 0 0 20px rgba(212, 255, 0, 0.15);
+            --shadow-glow: 0 0 20px rgba(57, 255, 20, 0.15);
         }
 
         * {
@@ -38,8 +38,8 @@
             color: var(--text-main);
             background-color: var(--bg-dark);
             background-image:
-                radial-gradient(circle at 10% 20%, rgba(212, 255, 0, 0.03) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(212, 255, 0, 0.03) 0%, transparent 40%),
+                radial-gradient(circle at 10% 20%, rgba(57, 255, 20, 0.03) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(57, 255, 20, 0.03) 0%, transparent 40%),
                 linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
             min-height: 100vh;
             display: flex;
@@ -82,7 +82,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            filter: drop-shadow(0 0 15px rgba(212, 255, 0, 0.3));
+            filter: drop-shadow(0 0 15px rgba(57, 255, 20, 0.3));
             animation: float 6s ease-in-out infinite;
         }
 
@@ -165,9 +165,13 @@
             color: var(--accent-color);
             margin-right: 16px;
             font-size: 18px;
+            width: 25px;
+            /* Fixed width for alignment */
+            text-align: center;
             flex-shrink: 0;
-            margin-top: 2px;
-            text-shadow: 0 0 10px rgba(212, 255, 0, 0.4);
+            line-height: 1.6;
+            /* Match text line-height */
+            text-shadow: 0 0 10px rgba(57, 255, 20, 0.4);
         }
 
         .cta-button {
@@ -176,12 +180,12 @@
             color: #000000;
             text-decoration: none;
             padding: 20px 50px;
-            border-radius: 50px;
+            border-radius: 12px;
             font-size: 18px;
             font-weight: 700;
             margin: 10px 0 20px 0;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 0 20px rgba(212, 255, 0, 0.2);
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.2);
             text-transform: uppercase;
             letter-spacing: 0.05em;
             position: relative;
@@ -190,7 +194,7 @@
 
         .cta-button:hover {
             transform: translateY(-2px) scale(1.02);
-            box-shadow: 0 0 30px rgba(212, 255, 0, 0.4);
+            box-shadow: 0 0 30px rgba(57, 255, 20, 0.4);
             background: #e2ff3d;
         }
 
@@ -286,7 +290,7 @@
             </div>
             <div class="feature feature-warning">
                 <span class="feature-icon">X</span>
-                <span>Не передавайте AI-коучу персональные данные</span>
+                <span>Не обсуждайте персональные данные</span>
             </div>
             <div class="feature feature-warning">
                 <span class="feature-icon">!</span>
