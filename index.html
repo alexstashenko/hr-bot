@@ -15,7 +15,7 @@
         :root {
             --bg-dark: #121212;
             --bg-graphite: #1E1E1E;
-            --accent-color: #00FF66;
+            --accent-color: #00FF88;
             /* Neon Green */
             --glass-bg: rgba(30, 30, 30, 0.6);
             --glass-border: rgba(255, 255, 255, 0.1);
@@ -76,17 +76,21 @@
         }
 
         .main-icon {
-            width: 80px;
-            height: 80px;
             margin: 0 auto 30px;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            filter: drop-shadow(0 0 15px rgba(0, 242, 255, 0.3));
             animation: float 6s ease-in-out infinite;
         }
 
-        .main-icon svg {
+        .main-icon-svg {
+            width: 80px;
+            height: 80px;
+            filter: drop-shadow(0 0 15px rgba(0, 242, 255, 0.3));
+        }
+
+        .main-icon-svg svg {
             width: 100%;
             height: 100%;
             stroke: var(--accent-color);
@@ -108,7 +112,7 @@
 
         h2 {
             font-size: 32px;
-            font-weight: 700;
+            font-weight: 400;
             color: var(--text-secondary);
             margin-bottom: 8px;
             line-height: 1.2;
@@ -150,10 +154,6 @@
 
         .feature:last-child {
             margin-bottom: 0;
-        }
-
-        .feature-warning {
-            /* Text color remains standard */
         }
 
         .feature-warning .feature-icon {
@@ -251,29 +251,48 @@
                 padding: 20px;
             }
         }
+
+        .ai-badge {
+            color: var(--accent-color);
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            text-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="main-icon">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M14 9C14 7.89543 13.1046 7 12 7H4C2.89543 7 2 7.89543 2 9V15C2 16.1046 2.89543 17 4 17H5.5V20L8.5 17H12C13.1046 17 14 16.1046 14 15V9Z"
-                    stroke="var(--accent-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M22 6V12C22 13.1046 21.1046 14 20 14H18.5V17L15.5 14H14.071" stroke="var(--accent-color)"
-                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                    d="M10 4.00005C10.6388 3.39207 11.4796 3.03159 12.3857 3.00391H20C21.1046 3.00391 22 3.89934 22 5.00391V6.00005"
-                    stroke="var(--accent-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+            <div class="main-icon-svg">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14 9C14 7.89543 13.1046 7 12 7H4C2.89543 7 2 7.89543 2 9V15C2 16.1046 2.89543 17 4 17H5.5V20L8.5 17H12C13.1046 17 14 16.1046 14 15V9Z"
+                        stroke="var(--accent-color)" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M22 6V12C22 13.1046 21.1046 14 20 14H18.5V17L15.5 14H14.071" stroke="var(--accent-color)"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M10 4.00005C10.6388 3.39207 11.4796 3.03159 12.3857 3.00391H20C21.1046 3.00391 22 3.89934 22 5.00391V6.00005"
+                        stroke="var(--accent-color)" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="ai-badge">AI-консультант</div>
         </div>
 
         <h2>Упала мотивация?</h2>
         <h2>Конфликты в команде?</h2>
-        <h2>Бесят сотрудники?</h2>
+        <h2>Сложный разговор?</h2>
 
-        <p class="subtitle"><br>Поговорите с AI-консультантом прямо сейчас в Телеграм. Без ожидания коуча, без книг, без
+        <p class="subtitle"><br>Получите готовый план действий за 5 минут. Без ожидания коуча, без книг, без
             догадок
         </p>
 
@@ -310,7 +329,7 @@
 
         <div class="credentials">
             Основано на 20-летнем опыте работы с крупными компаниями РФ и СНГ<br><br>
-            (C) 2025, AI Coach Lab
+            (C) 2025
         </div>
     </div>
 </body>
